@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd ../.. && pnpm install --frozen-lockfile && pnpm --filter @workspace/aura-landing run build",
+  "buildCommand": "cd ../.. && pnpm install --frozen-lockfile && pnpm --filter @workspace/landing run build",
   "outputDirectory": "dist/public",
   "installCommand": "echo skip",
   "rewrites": [
