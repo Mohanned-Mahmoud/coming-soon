@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { RefreshCcw } from 'lucide-react';
-import auraLogo from '@/assets/aura-logo.png';
+import artechLogo from '@/assets/artech-logo.png';
 import floorImage from '@/assets/floor.png';
 
 const SEGMENT_COUNT = 14;
@@ -97,10 +97,10 @@ export default function RopeScene() {
   const [socketState, setSocketState] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    document.title = "AURA | Live the Experience";
+    document.title = "ARTech | Live the Experience";
     const meta = document.createElement('meta');
     meta.name = "description";
-    meta.content = "AURA is a premium smart-home connected device. Coming soon.";
+    meta.content = "ARTech is a premium smart-home connected device. Coming soon.";
     document.head.appendChild(meta);
   }, []);
 
@@ -596,7 +596,7 @@ export default function RopeScene() {
         {showText && (
           <div className="relative animate-in fade-in slide-in-from-top-4 duration-1000 fill-mode-both">
             <div className="absolute inset-0 bg-[#F5C97A] blur-[30px] opacity-40 rounded-full" />
-            <img src={auraLogo} alt="AURA" className="h-12 md:h-16 lg:h-20 relative z-10 opacity-90 drop-shadow-[0_0_15px_rgba(245,201,122,0.8)]" />
+            <img src={artechLogo} alt="ARTech" className="h-12 md:h-16 lg:h-20 relative z-10 opacity-90 drop-shadow-[0_0_15px_rgba(245,201,122,0.8)]" />
           </div>
         )}
       </div>
